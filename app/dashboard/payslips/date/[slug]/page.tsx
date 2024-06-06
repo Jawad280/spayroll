@@ -8,7 +8,7 @@ import { GetAllPayslips } from "@/lib/serverFunctions";
 import { ArrowLeft, Printer } from "lucide-react";
 import React, { useState } from "react";
 
-const page = ({ params }: { params: { slug: string } }) => {
+const PayslipsCompany = ({ params }: { params: { slug: string } }) => {
   const { payslips, error, isLoading } = GetAllPayslips(params.slug);
   const [isAll, setIsAll] = useState<boolean>(false);
 
@@ -59,4 +59,4 @@ const page = ({ params }: { params: { slug: string } }) => {
   );
 };
 
-export default page;
+export default PayslipsCompany;

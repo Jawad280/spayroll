@@ -6,7 +6,7 @@ import { Edit3Icon } from "lucide-react";
 import React, { useState } from "react";
 import Loading from "@/components/Loading";
 
-const page = ({ params }: { params: { slug: string } }) => {
+const PayslipPage = ({ params }: { params: { slug: string } }) => {
   const [isEdit, setIsEdit] = useState<boolean>(false);
   const { payslip, error, isLoading } = GetIndividualPayslip(params.slug);
 
@@ -55,4 +55,4 @@ const page = ({ params }: { params: { slug: string } }) => {
   );
 };
 
-export default page;
+export default PayslipPage;
