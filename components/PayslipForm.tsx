@@ -15,7 +15,7 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { useRouter } from "next/navigation";
 import { Employee, Payslip } from "@/types";
-import { generatePayslips } from "./generatePayslips";
+import { generatePayslips } from "@/components/GeneratePayslips";
 
 const PayslipForm = ({ employees }: { employees: Employee[] }) => {
   const router = useRouter();
